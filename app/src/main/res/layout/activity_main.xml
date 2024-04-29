@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/fondo" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <ScrollView
+                    android:id="@+id/scrollView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="415dp"
+                            android:layout_height="49dp"
+                            android:layout_marginTop="20dp"
+                            android:background="#E8737A"
+                            android:text="Productos"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textColor="#EDDBC9"
+                            android:textColorHighlight="#EC9797"
+                            android:textColorHint="#BA5555"
+                            android:textSize="34sp"
+                            android:textStyle="bold"
+                            android:typeface="sans" />
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout2"
+                            android:layout_width="354dp"
+                            android:layout_height="204dp"
+                            android:layout_marginTop="6dp"
+                            android:orientation="vertical">
+
+                            <SearchView
+                                android:id="@+id/buscador"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <Button
+                                android:id="@+id/btnBuscar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#EDDBC9"
+                                android:text="Buscar"
+                                android:textColor="#E8737A"
+                                android:textSize="16sp" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <Button
+                                android:id="@+id/btnEditar"
+                                android:layout_width="124dp"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#F887A3"
+                                android:text="Editar"
+                                android:textSize="20sp" />
+
+                            <Button
+                                android:id="@+id/btnEliminar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#F887A3"
+                                android:text="Eliminar"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
+                        <TableLayout
+                            android:id="@+id/tabla"
+                            android:layout_width="match_parent"
+                            android:layout_height="402dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#FDC9B8"
+                            android:backgroundTint="#F6B39E">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ScrollView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical" />
+                                </ScrollView>
+
+                                <TextView
+                                    android:id="@+id/tablaNombre"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:backgroundTint="#E8C1B1"
+                                    android:text="Nombre"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/tablaMarca"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Marca"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/tablaTienda"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Tienda"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/tablaCantidad"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Cantidad"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/tablaUmedida"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Unidad Medida"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/tablaPrecio"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Precio"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/tablaFecha"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Fecha"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/floatingActionButton2"
+                            android:layout_width="91dp"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            app:srcCompat="@android:drawable/ic_input_add" />
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
